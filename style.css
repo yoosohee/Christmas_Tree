@@ -1,0 +1,76 @@
+body {
+  background-color: #0d0d0d;
+  color: #ffffff;
+
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 20px;
+
+  /* 🚨 중앙 정렬 보강🚨 */
+  margin: 0; /* 브라우저 기본 마진 제거 */
+  width: 100%; /* 너비 100% 보장 */
+  min-height: 100vh; /* 높이 뷰포트 전체 보장 */
+
+  /* flexbox를 이용한 중앙 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가로 중앙 정렬 (트리 쏠림 방지) */
+  justify-content: center; /* 세로 중앙 정렬 (선택 사항) */
+
+  padding-top: 50px; /* 트리를 살짝 아래로 내리기 위해 유지 */
+}
+
+/* 트리 모양 전체 컨테이너 */
+#tree-container {
+  line-height: 1.2;
+  text-align: center;
+  white-space: pre;
+  margin-bottom: 30px;
+
+  /* 트리의 최대 폭을 문자에 맞춰 고정 */
+  width: 17ch;
+}
+
+/* 트리 모양 전체 컨테이너 */
+#tree-container {
+  line-height: 1.2; /* 줄 간격 좁게 */
+  text-align: center;
+  white-space: pre; /* 공백 및 줄바꿈 유지 */
+  margin-bottom: 30px;
+}
+
+/* 깜박이는 별 */
+.star {
+  font-weight: bold;
+  /* transition: color 0.1s; CSS 없이 JS에서 직접 색상 변경 */
+}
+
+/* 밑동 스타일 (네온 효과) */
+.trunk-char {
+  font-weight: bold;
+}
+
+/* 네온 퍼플 밑동 */
+.trunk-purple {
+  color: magenta;
+  text-shadow: 0 0 8px magenta, 0 0 10px #ff00ff;
+}
+
+/* 네온 그린 밑동 */
+.trunk-green {
+  color: lime;
+  text-shadow: 0 0 8px lime, 0 0 10px #00ff00;
+}
+
+/* 가사 컨테이너 */
+#lyrics-container {
+  color: #f0f0f0;
+  line-height: 1.5;
+}
+
+/* 버튼 그룹 중앙 정렬을 위한 컨테이너 스타일 (index.html에서 .button-group으로 설정됨) */
+.neon-start-button {
+  display: flex;
+  gap: 60px; /* 버튼 사이 간격 */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
