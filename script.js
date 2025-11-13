@@ -97,7 +97,6 @@ const lyrics = [
   "This is all I'm asking for",
   "I just want to see my baby",
   "Standing right outside my door",
-  "I just want you for my own",
   "Oh, I just want him for my own",
   "More than you could ever know",
   "Make my wish come true",
